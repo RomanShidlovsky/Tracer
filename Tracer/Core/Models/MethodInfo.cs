@@ -12,7 +12,8 @@ namespace Tracer.Core.Models
         public string ClassName { get; set; }
         public long Time { get; set; }
         public List<MethodInfo> Methods { get; set; }
-        public MethodInfo(string name, string className, long time)
+        
+        public MethodInfo(string name="", string className="", long time=0)
         {
             Name = name;
             ClassName = className;

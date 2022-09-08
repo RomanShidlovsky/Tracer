@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tracer.Core
 {
-    public interface ITracer
+    public interface ITracer<T>
     {
         // вызывается в начале замеряемого метода
         void StartTrace();
@@ -15,6 +15,6 @@ namespace Tracer.Core
         void StopTrace();
 
         // получить результаты измерений
-        TraceResult GetTraceResult();
+        T GetTraceResult();
     }
 }
