@@ -8,17 +8,32 @@ namespace Tracer.Core.Models
 {
     public class MethodInfo
     {
-        public string Name { get; set; }
-        public string ClassName { get; set; }
-        public long Time { get; set; }
-        public List<MethodInfo> Methods { get; set; }
+        public string Name { get; }
+        public string ClassName { get; }
+        public long Time { get; private set; }
+
+        private List<MethodInfo> _methods;
+        public IReadOnlyList<MethodInfo> Methods 
+        {
+            get { return _methods; } 
+        }
         
         public MethodInfo(string name="", string className="", long time=0)
         {
             Name = name;
             ClassName = className;
             Time = time;
-            Methods = new List<MethodInfo>();
+            _methods = new List<MethodInfo>();
+        }
+
+        internal void SetTime(long time)
+        {
+            Time = time;
+        }
+
+        internal void AddMethod(MethodInfo info)
+        {
+            _methods.Add(info);
         }
     }
 }

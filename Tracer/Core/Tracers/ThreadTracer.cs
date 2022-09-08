@@ -4,7 +4,7 @@ using Tracer.Core.Models;
 
 namespace Tracer.Core.Tracers
 {
-    public class ThreadTracer : ITracer <ReadOnlyThreadInfo>
+    public class ThreadTracer : ITracer <ThreadInfo>
     {
         private class MethodResource
         {
@@ -18,11 +18,12 @@ namespace Tracer.Core.Tracers
             }
         }
 
-        private readonly int _frameNumber = 2;
+        private readonly int _frameNumber = 3;
         private Stack<MethodResource> _resources = new();
+        private List<MethodInfo> _rootMethods = new();
 
         public void StartTrace()
-        {
+        {    
             MethodInfo info = GetMethodInfo();
             MethodResource methodResource = new(info);
             _resources.Push(methodResource);
@@ -31,12 +32,32 @@ namespace Tracer.Core.Tracers
 
         public void StopTrace()
         {
-            
+            if(_resources.TryPop(out MethodResource? child))
+            {
+                MethodInfo info = child.MethodInfo;
+                
+                child!.MethodInfo.SetTime(child.MethodTracer.GetTraceResult());
+                if(_resources.TryPeek(out MethodResource? parent))
+                {
+                    parent.MethodInfo.AddMethod(child.MethodInfo);
+                }
+                else
+                {
+                    _rootMethods.Add(child.MethodInfo);
+                }
+            }
         }
 
-        public ReadOnlyThreadInfo GetTraceResult()
+        public ThreadInfo GetTraceResult()
         {
+            int threadId = Thread.CurrentThread.ManagedThreadId;
+            long time = 0;
+            foreach (var method in _rootMethods)
+            {
+                time += method.Time;
+            }
 
+            return new ThreadInfo(threadId, time, _rootMethods);
         }
 
         private MethodInfo GetMethodInfo()

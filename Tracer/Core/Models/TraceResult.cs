@@ -8,9 +8,9 @@ namespace Tracer.Core.Models
 {
     public class TraceResult
     {
-        public IReadOnlyList<ReadOnlyThreadInfo> Threads { get; }
+        public IReadOnlyList<ThreadInfo> Threads { get; }
 
-        public TraceResult(List<ReadOnlyThreadInfo> threads)
+        public TraceResult(List<ThreadInfo> threads)
         {
             Threads = threads;
         }

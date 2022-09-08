@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Tracer.Core.Models
 {
-    public class ReadOnlyThreadInfo
+    public class ThreadInfo
     {
         public int ThreadId { get; }
         public long Time { get; }
-        public IReadOnlyList<ReadOnlyMethodInfo> Methods { get; }
+        public IReadOnlyList<MethodInfo> Methods { get; }
 
-        public ReadOnlyThreadInfo(int threadId, long time, List<ReadOnlyMethodInfo> methods)
+        public ThreadInfo(int threadId, long time, List<MethodInfo> methods)
         {
             ThreadId = threadId;
             Time = time;

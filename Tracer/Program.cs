@@ -1,10 +1,13 @@
-﻿namespace Tracer.Core
+﻿using Tracer.Core.Tracers;
+using Tracer.Core.Models;
+
+namespace Tracer.Core
 {
     class Program
     {
         static void Main()
         {
-            Tracer tracer = new Tracer();
+            ITracer<TraceResult> tracer = new Tracer.Core.Tracers.Tracer();
             C test = new C(tracer);
 
             test.M0();
@@ -17,9 +20,9 @@
 
         public class C
         {
-            private ITracer _tracer;
+            private ITracer<TraceResult> _tracer;
 
-            public C(ITracer tracer)
+            public C(ITracer<TraceResult> tracer)
             {
                 _tracer = tracer;
             }
@@ -44,6 +47,7 @@
             {
                 _tracer.StartTrace();
                 Thread.Sleep(50);
+                M3();
                 _tracer.StopTrace();
             }
 
