@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <thread id="1" time="937ms">
+    <method name="PublicMethod" class="Foo" time="627ms">
+      <method name="InnerMethod" class="Bar" time="314ms" />
+      <method name="PrivateMethod" class="Foo" time="202ms" />
+    </method>
+    <method name="InnerMethod" class="Bar" time="310ms" />
+  </thread>
+  <thread id="4" time="627ms">
+    <method name="PublicMethod" class="Foo" time="627ms">
+      <method name="InnerMethod" class="Bar" time="314ms" />
+      <method name="PrivateMethod" class="Foo" time="202ms" />
+    </method>
+  </thread>
+</root>

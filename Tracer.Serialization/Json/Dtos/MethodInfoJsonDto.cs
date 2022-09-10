@@ -11,7 +11,7 @@ namespace Tracer.Serialization.Json.Dtos
         [JsonPropertyName("class")]
         public string ClassName { get; set; }
         [JsonPropertyName("time")]
-        public long Time { get; set; }
+        public string Time { get; set; }
         [JsonPropertyName("methods")]
         public List<MethodInfoJsonDto> Methods { get; set; }
     }
