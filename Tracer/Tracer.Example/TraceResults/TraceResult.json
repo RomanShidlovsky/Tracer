@@ -1,56 +1,56 @@
 {
-  "Threads": [
+  "threads": [
     {
-      "ThreadId": 1,
-      "Time": 926,
-      "Methods": [
+      "id": "1",
+      "time": "923ms",
+      "methods": [
         {
-          "Name": "PublicMethod",
-          "ClassName": "Foo",
-          "Time": 618,
-          "Methods": [
+          "name": "PublicMethod",
+          "class": "Foo",
+          "time": "613ms",
+          "methods": [
             {
-              "Name": "InnerMethod",
-              "ClassName": "Bar",
-              "Time": 308,
-              "Methods": []
+              "name": "InnerMethod",
+              "class": "Bar",
+              "time": "300ms",
+              "methods": []
             },
             {
-              "Name": "PrivateMethod",
-              "ClassName": "Foo",
-              "Time": 203,
-              "Methods": []
+              "name": "PrivateMethod",
+              "class": "Foo",
+              "time": "202ms",
+              "methods": []
             }
           ]
         },
         {
-          "Name": "InnerMethod",
-          "ClassName": "Bar",
-          "Time": 308,
-          "Methods": []
+          "name": "InnerMethod",
+          "class": "Bar",
+          "time": "310ms",
+          "methods": []
         }
       ]
     },
     {
-      "ThreadId": 4,
-      "Time": 618,
-      "Methods": [
+      "id": "6",
+      "time": "613ms",
+      "methods": [
         {
-          "Name": "PublicMethod",
-          "ClassName": "Foo",
-          "Time": 618,
-          "Methods": [
+          "name": "PublicMethod",
+          "class": "Foo",
+          "time": "613ms",
+          "methods": [
             {
-              "Name": "InnerMethod",
-              "ClassName": "Bar",
-              "Time": 308,
-              "Methods": []
+              "name": "InnerMethod",
+              "class": "Bar",
+              "time": "300ms",
+              "methods": []
             },
             {
-              "Name": "PrivateMethod",
-              "ClassName": "Foo",
-              "Time": 202,
-              "Methods": []
+              "name": "PrivateMethod",
+              "class": "Foo",
+              "time": "202ms",
+              "methods": []
             }
           ]
         }

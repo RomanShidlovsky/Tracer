@@ -6,7 +6,7 @@ namespace Tracer.Serialization.Json.Dtos
     public class ThreadInfoJsonDto
     {
         [JsonPropertyName("id")]
-        public int ThreadId { get; set; }
+        public string ThreadId { get; set; }
         [JsonPropertyName("time")]
         public string Time { get; set; }
         [JsonPropertyName("methods")]

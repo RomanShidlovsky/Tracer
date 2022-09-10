@@ -24,7 +24,7 @@ namespace Json
 
             return new ThreadInfoJsonDto()
             {
-                ThreadId = threadInfo.ThreadId,
+                ThreadId = $"{threadInfo.ThreadId}",
                 Time = $"{threadInfo.Time}ms",
                 Methods = methodDto.Methods
             };
