@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer", "Tracer\Tracer.csproj", "{316FF4E8-2388-4081-8F33-5BA1F20D50DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer.Core", "Tracer.Core\Tracer.Core.csproj", "{F771CBE4-313C-413B-95E4-63FBADECE405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer.Serialization.Abstractions", "Tracer.Serialization.Abstractions\Tracer.Serialization.Abstractions.csproj", "{47BE788C-1131-4012-BFD2-A4344B768E98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{316FF4E8-2388-4081-8F33-5BA1F20D50DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{316FF4E8-2388-4081-8F33-5BA1F20D50DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{316FF4E8-2388-4081-8F33-5BA1F20D50DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{316FF4E8-2388-4081-8F33-5BA1F20D50DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F771CBE4-313C-413B-95E4-63FBADECE405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F771CBE4-313C-413B-95E4-63FBADECE405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F771CBE4-313C-413B-95E4-63FBADECE405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F771CBE4-313C-413B-95E4-63FBADECE405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BE788C-1131-4012-BFD2-A4344B768E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BE788C-1131-4012-BFD2-A4344B768E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BE788C-1131-4012-BFD2-A4344B768E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BE788C-1131-4012-BFD2-A4344B768E98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
