@@ -1,7 +1,4 @@
-﻿using Tracer.Core;
-using Tracer.Core.Models;
-using System.Diagnostics;
-
+﻿using System.Diagnostics;
 
 namespace Tracer.Core.Tracers
 {

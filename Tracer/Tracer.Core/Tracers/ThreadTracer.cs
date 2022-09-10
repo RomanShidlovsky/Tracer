@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Collections.Concurrent;
 using Tracer.Core.Models;
 
 namespace Tracer.Core.Tracers

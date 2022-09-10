@@ -1,6 +1,5 @@
 ﻿using System.Collections.Concurrent;
 using Tracer.Core.Models;
-using Tracer.Core;
 
 namespace Tracer.Core.Tracers
 {
