@@ -14,6 +14,7 @@ var bar = new Bar(tracer);
 var task = Task.Run(() => foo.PublicMethod());
 foo.PublicMethod();
 bar.InnerMethod();
+Console.WriteLine(Environment.CurrentManagedThreadId);
 task.Wait();
 
 var result = tracer.GetTraceResult();

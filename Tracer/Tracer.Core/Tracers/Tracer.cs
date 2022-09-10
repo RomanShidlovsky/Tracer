@@ -9,7 +9,7 @@ namespace Tracer.Core.Tracers
 
         public void StartTrace()
         {
-            int threadId = Thread.CurrentThread.ManagedThreadId;
+            int threadId = Environment.CurrentManagedThreadId;
             if (!_threads.ContainsKey(threadId))
             {
                 ThreadTracer threadTracer = new ThreadTracer();
@@ -24,7 +24,7 @@ namespace Tracer.Core.Tracers
 
         public void StopTrace()
         {
-            int threadId = Thread.CurrentThread.ManagedThreadId;
+            int threadId = Environment.CurrentManagedThreadId;
             if (_threads.ContainsKey(threadId))
             {
                 _threads[threadId].StopTrace();

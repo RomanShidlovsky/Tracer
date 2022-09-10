@@ -20,6 +20,7 @@ namespace Tracer.Core.Tracers
         private readonly int _frameNumber = 3;
         private Stack<MethodResource> _resources = new();
         private List<MethodInfo> _rootMethods = new();
+        private int _threadId = Environment.CurrentManagedThreadId;
 
         public void StartTrace()
         {    
@@ -49,14 +50,13 @@ namespace Tracer.Core.Tracers
 
         public ThreadInfo GetTraceResult()
         {
-            int threadId = Thread.CurrentThread.ManagedThreadId;
             long time = 0;
             foreach (var method in _rootMethods)
             {
                 time += method.Time;
             }
 
-            return new ThreadInfo(threadId, time, _rootMethods);
+            return new ThreadInfo(_threadId, time, _rootMethods);
         }
 
         private MethodInfo GetMethodInfo()
