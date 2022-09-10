@@ -2,23 +2,23 @@
   "Threads": [
     {
       "ThreadId": 1,
-      "Time": 937,
+      "Time": 926,
       "Methods": [
         {
           "Name": "PublicMethod",
           "ClassName": "Foo",
-          "Time": 627,
+          "Time": 618,
           "Methods": [
             {
               "Name": "InnerMethod",
               "ClassName": "Bar",
-              "Time": 314,
+              "Time": 308,
               "Methods": []
             },
             {
               "Name": "PrivateMethod",
               "ClassName": "Foo",
-              "Time": 202,
+              "Time": 203,
               "Methods": []
             }
           ]
@@ -26,24 +26,24 @@
         {
           "Name": "InnerMethod",
           "ClassName": "Bar",
-          "Time": 310,
+          "Time": 308,
           "Methods": []
         }
       ]
     },
     {
       "ThreadId": 4,
-      "Time": 627,
+      "Time": 618,
       "Methods": [
         {
           "Name": "PublicMethod",
           "ClassName": "Foo",
-          "Time": 627,
+          "Time": 618,
           "Methods": [
             {
               "Name": "InnerMethod",
               "ClassName": "Bar",
-              "Time": 314,
+              "Time": 308,
               "Methods": []
             },
             {
