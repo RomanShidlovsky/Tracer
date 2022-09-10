@@ -11,7 +11,7 @@ namespace Json
 
         public void Serialize(TraceResult traceResult, Stream to)
         {
-            var res = JsonSerializer.Serialize<TraceResult>(traceResult);
+            var res = JsonSerializer.Serialize(traceResult);
             to.Write(Encoding.Default.GetBytes(res));
         }
     }
