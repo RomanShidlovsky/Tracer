@@ -19,8 +19,22 @@ namespace Json
         public static ThreadInfoJsonDto ToDto(this ThreadInfo threadInfo)
         {
             var methodDto = new MethodInfoJsonDto();
-            var methodsRoot = new MethodInfo("","",)
-            
+            var methodsRoot = new MethodInfo((List<MethodInfo>)threadInfo.Methods);
+            CopyMethods(methodsRoot, methodDto);
+
+            return new ThreadInfoJsonDto()
+            {
+                ThreadId = threadInfo.ThreadId,
+                Time = threadInfo.Time,
+                Methods = methodDto.Methods
+            };
+        
+        }
+
+        public static TraceResultJsonDto ToDto(this TraceResult traceResult)
+        {
+            return new TraceResultJsonDto(traceResult.Threads.Select(x => x.ToDto()).ToList());
+        }
 
         public static void CopyMethods(MethodInfo methodInfo, MethodInfoJsonDto dto)
         {
