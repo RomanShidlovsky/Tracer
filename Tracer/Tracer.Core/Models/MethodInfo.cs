@@ -11,13 +11,21 @@
         {
             get { return _methods; } 
         }
-        
-        public MethodInfo(string name="", string className="", long time=0)
+
+        public MethodInfo(string name = "", string className = "", long time = 0, List<MethodInfo>? methods = null)
         {
             Name = name;
             ClassName = className;
             Time = time;
-            _methods = new List<MethodInfo>();
+
+            if (methods == null)
+            {
+                _methods = new List<MethodInfo>();
+            }
+            else
+            {
+                _methods = methods;
+            }
         }
 
         internal void SetTime(long time)
