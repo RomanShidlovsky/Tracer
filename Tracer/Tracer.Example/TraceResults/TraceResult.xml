@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <thread id="1" time="923ms">
-    <method name="PublicMethod" class="Foo" time="613ms">
-      <method name="InnerMethod" class="Bar" time="300ms" />
+  <thread id="1" time="929ms">
+    <method name="PublicMethod" class="Foo" time="618ms">
+      <method name="InnerMethod" class="Bar" time="306ms" />
       <method name="PrivateMethod" class="Foo" time="202ms" />
     </method>
-    <method name="InnerMethod" class="Bar" time="310ms" />
+    <method name="InnerMethod" class="Bar" time="311ms" />
   </thread>
-  <thread id="6" time="613ms">
-    <method name="PublicMethod" class="Foo" time="613ms">
-      <method name="InnerMethod" class="Bar" time="300ms" />
+  <thread id="6" time="618ms">
+    <method name="PublicMethod" class="Foo" time="618ms">
+      <method name="InnerMethod" class="Bar" time="306ms" />
       <method name="PrivateMethod" class="Foo" time="202ms" />
     </method>
   </thread>

@@ -1,0 +1,35 @@
+threads:
+- id: 1
+  time: 929ms
+  methods:
+  - name: PublicMethod
+    class: Foo
+    time: 618ms
+    methods:
+    - name: InnerMethod
+      class: Bar
+      time: 306ms
+      methods: []
+    - name: PrivateMethod
+      class: Foo
+      time: 202ms
+      methods: []
+  - name: InnerMethod
+    class: Bar
+    time: 311ms
+    methods: []
+- id: 6
+  time: 618ms
+  methods:
+  - name: PublicMethod
+    class: Foo
+    time: 618ms
+    methods:
+    - name: InnerMethod
+      class: Bar
+      time: 306ms
+      methods: []
+    - name: PrivateMethod
+      class: Foo
+      time: 202ms
+      methods: []

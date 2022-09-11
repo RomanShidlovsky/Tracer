@@ -2,17 +2,17 @@
   "threads": [
     {
       "id": "1",
-      "time": "923ms",
+      "time": "929ms",
       "methods": [
         {
           "name": "PublicMethod",
           "class": "Foo",
-          "time": "613ms",
+          "time": "618ms",
           "methods": [
             {
               "name": "InnerMethod",
               "class": "Bar",
-              "time": "300ms",
+              "time": "306ms",
               "methods": []
             },
             {
@@ -26,24 +26,24 @@
         {
           "name": "InnerMethod",
           "class": "Bar",
-          "time": "310ms",
+          "time": "311ms",
           "methods": []
         }
       ]
     },
     {
       "id": "6",
-      "time": "613ms",
+      "time": "618ms",
       "methods": [
         {
           "name": "PublicMethod",
           "class": "Foo",
-          "time": "613ms",
+          "time": "618ms",
           "methods": [
             {
               "name": "InnerMethod",
               "class": "Bar",
-              "time": "300ms",
+              "time": "306ms",
               "methods": []
             },
             {
