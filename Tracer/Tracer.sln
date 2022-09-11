@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracer.Serialization.Abstra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tracer", "Tracer", "{E88C1DE5-035E-4FE3-A8D9-5565448A5AA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer.Example", "Tracer.Example\Tracer.Example.csproj", "{EC8D79E3-D25F-4615-B465-662E5A19C621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracer.Example", "Tracer.Example\Tracer.Example.csproj", "{EC8D79E3-D25F-4615-B465-662E5A19C621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer.Core.Tests", "Tracer.Core.Tests\Tracer.Core.Tests.csproj", "{36E5A079-27E2-43A8-A963-163E00FA01E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{EC8D79E3-D25F-4615-B465-662E5A19C621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8D79E3-D25F-4615-B465-662E5A19C621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8D79E3-D25F-4615-B465-662E5A19C621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E5A079-27E2-43A8-A963-163E00FA01E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E5A079-27E2-43A8-A963-163E00FA01E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E5A079-27E2-43A8-A963-163E00FA01E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E5A079-27E2-43A8-A963-163E00FA01E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{F771CBE4-313C-413B-95E4-63FBADECE405} = {E88C1DE5-035E-4FE3-A8D9-5565448A5AA1}
 		{47BE788C-1131-4012-BFD2-A4344B768E98} = {E88C1DE5-035E-4FE3-A8D9-5565448A5AA1}
 		{EC8D79E3-D25F-4615-B465-662E5A19C621} = {E88C1DE5-035E-4FE3-A8D9-5565448A5AA1}
+		{36E5A079-27E2-43A8-A963-163E00FA01E5} = {E88C1DE5-035E-4FE3-A8D9-5565448A5AA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5E1E436-4F74-49EC-9F06-C4531C4FCFAB}

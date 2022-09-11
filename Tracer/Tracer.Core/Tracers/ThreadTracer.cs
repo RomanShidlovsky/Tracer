@@ -17,10 +17,15 @@ namespace Tracer.Core.Tracers
             }
         }
 
-        private readonly int _frameNumber = 3;
+        private readonly int _frameNumber;
         private Stack<MethodResource> _resources = new();
         private List<MethodInfo> _rootMethods = new();
         private int _threadId = Environment.CurrentManagedThreadId;
+
+        public ThreadTracer(int frameNumber = 3)
+        {
+            _frameNumber = frameNumber;
+        }
 
         public void StartTrace()
         {    
