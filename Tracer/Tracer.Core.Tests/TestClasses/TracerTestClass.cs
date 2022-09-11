@@ -29,6 +29,5 @@ namespace Tracer.Core.Tests.TestClasses
             Thread.Sleep(200);
             _tracer.StopTrace();
         }
-
     }
 }
