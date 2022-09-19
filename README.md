@@ -76,7 +76,7 @@ public interface ITraceResultSerializer
     ]
 }
 ```
-```
+```XML
 <root>
     <thread id="1" time="42ms">
         <method name="MyMethod" time="15ms" class="Foo">
@@ -88,6 +88,8 @@ public interface ITraceResultSerializer
         ...
     </thread>
 </root>
+```
+```YAML
 threads:
   - id: 1
     time: 42ms
@@ -105,6 +107,7 @@ threads:
     time: 24ms
   - ...
 ```
+
 Обратите внимание, что в результатах работы потока на одном уровне может находиться несколько методов. Это возникает в ситуации, когда StartTrace() и StopTrace() вызываются не везде (два вкладки: с кодом и с результатом):
 ```C#
 public class C
